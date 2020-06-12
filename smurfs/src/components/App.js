@@ -58,7 +58,14 @@ function App(props) {
       </section>
       <section className="displaySmurfs">
         {props.smurfs.map((smurf) => {
-          return <Smurfs key={smurf.id} smurf={smurf} />;
+          return (
+            <Smurfs
+              key={smurf.id}
+              smurf={smurf}
+              setRefresh={setRefresh}
+              refresh={refresh}
+            />
+          );
         })}
       </section>
     </div>
