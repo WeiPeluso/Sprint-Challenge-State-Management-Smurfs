@@ -1,3 +1,43 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  color: #88ccff;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+}
+
+.addSmurf {
+  border: 4px solid #88ccff;
+  width: 80%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.form {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input {
+  border: 1px solid #88ccff;
+  border-radius: 10px;
+  height: 1.5rem;
+}
+
+#addButton {
+  background-color: #88ccff;
+  color: white;
+  height: 2rem;
+  border: 1px solid #88ccff;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  letter-spacing: 0.2rem;
+  border-radius: 10px;
+}
