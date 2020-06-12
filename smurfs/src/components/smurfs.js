@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./smurfs.css";
 
 const Smurfs = (props) => {
   const [editSmurf, setEditSmurf] = useState({
@@ -50,10 +51,10 @@ const Smurfs = (props) => {
     setEditToggle(false);
   };
   return (
-    <section>
+    <section className="smurf">
       {editToggle ? (
-        <>
-          <form onSubmit={onSubmit}>
+        <div>
+          <form className="smurfEdit" onSubmit={onSubmit}>
             <label>Name:</label>
             <input
               type="text"
@@ -75,17 +76,29 @@ const Smurfs = (props) => {
               value={editSmurf.age}
               onChange={smurfEditChange}
             />
-            <button type="submit">Submit</button>
-            <button onClick={cancelEdit}>Cancel Edit</button>
+            <div className="editButtons">
+              <button className="editSmurfButton" onClick={cancelEdit}>
+                Cancel Edit
+              </button>
+              <button className="editSmurfButton" type="submit">
+                Submit
+              </button>
+            </div>
           </form>
-        </>
+        </div>
       ) : (
         <>
           <h3>{props.smurf.name}</h3>
           <p>height: {props.smurf.height}</p>
           <p>age:{props.smurf.age}</p>
-          <button onClick={editSmurfButton}>Edit</button>
-          <button onClick={deleteSmurf}>Delete</button>
+          <div className="buttonContainer">
+            <button className="smurfButton" onClick={editSmurfButton}>
+              Edit
+            </button>
+            <button className="smurfButton" onClick={deleteSmurf}>
+              Delete
+            </button>
+          </div>
         </>
       )}
     </section>

@@ -1,0 +1,64 @@
+.smurf {
+  color: #88ccff;
+  background-color: rgba(0, 0, 0, 0.822);
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+h3 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.buttonContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.smurfButton {
+  width: 40%;
+  background-color: #88ccff;
+  color: white;
+  border: 1px solid #88ccff;
+  letter-spacing: 0.1rem;
+  border-radius: 10px;
+  height: 1.5rem;
+}
+
+.smurfEdit {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.editButtons {
+  height: 8vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.editSmurfButton {
+  width: 100%;
+  background-color: #88ccff;
+  color: white;
+  border: 1px solid #88ccff;
+  letter-spacing: 0.1rem;
+  border-radius: 10px;
+  height: 1.5rem;
+}

@@ -28,10 +28,10 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>SMURFS!!!!!</h1>
+      <h1>SMURFS</h1>
       <section className="addSmurf">
         <h2>Add a Smurf</h2>
-        <form onSubmit={onSubmit}>
+        <form className="form" onSubmit={onSubmit}>
           <label>Name:</label>
           <input
             type="text"
@@ -53,7 +53,9 @@ function App(props) {
             value={smurf.age}
             onChange={smurfInputChange}
           />
-          <button type="submit">Submit</button>
+          <button id="addButton" type="submit">
+            Submit
+          </button>
         </form>
       </section>
       <section className="displaySmurfs">
